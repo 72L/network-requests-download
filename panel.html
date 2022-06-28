@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<style>
+		html {
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		body {
+			padding: 5px;
+		}
+
+		h2, h3 {
+			font-weight: normal;
+		}
+
+		button {
+			 border: 0;
+			 box-shadow: none;
+			 border-radius: 0px;
+			padding: 5px 10px;
+			margin: 5px 0px;
+			background: seagreen;
+			color: white;
+			font-size: 16px;
+		}
+
+		div#output{
+			margin-top: 10px;
+		}
+
+		progress{
+			margin-left: 5px;
+		}
+
+		hr {
+			margin: 10px 0;
+		}
+
+		textarea {
+			width: 100%;
+		}
+
+	</style>
+</head>
+<body>
+
+	<img src="NRD.png">
+
+	<h2>Network Requests Download: Version <span id="version"><!--js-replaced--></span></h2>
+	<p>
+		This tool allows website testers to record and download network performance metadata across different webpages.
+		A report will download after all URLs have been visited.
+	</p>
+
+	<hr/>
+	<h3>BOX 1: URLs:</h3>
+	<textarea id="urls" placeholder="One URL per line..."  rows="7"></textarea>
+
+	<h3>BOX 2: Filter Requests:</h3>
+	<input id="filter">
+
+	<hr/>
+	<br/>
+	<button id="go">Start</button>
+
+	<br/>
+	<div id="output">
+
+	</div>
+
+	<script type="text/javascript" src="panel.js"></script>
+
+</body>
+</html>
